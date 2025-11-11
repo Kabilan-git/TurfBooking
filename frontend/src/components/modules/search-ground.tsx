@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { Calendar, MapPin, MoveRight } from "lucide-react";
+import { MapPin, MoveRight } from "lucide-react";
 import Calendar22 from "@/components/shared/datepicker";
 import Dropdown from "@/components/shared/dropdown";
 
@@ -14,7 +14,7 @@ const SearchGround = () => {
     console.log(date);
   };
 
-  const [selectedValue, setSelectedValue] = useState<String>("");
+  const [selectedValue, setSelectedValue] = useState<string>("");
   const handleSelectedValue = (value: string) => {
     setSelectedValue(value);
     console.log(value);
