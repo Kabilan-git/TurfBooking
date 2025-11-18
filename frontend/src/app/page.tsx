@@ -1,8 +1,14 @@
+import Hero from "@/components/modules/hero";
+import ShowReviews from "@/components/modules/ShowReviews";
+import Image from "next/image";
 import GroundCard from "@/components/modules/GroundCard";
 import { grounds } from "@/data/grounds";
 
 export default function Home() {
   return (
+    <>
+      <Hero />
+      <ShowReviews />
     <section className="py-10 bg-green-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center mb-6">
@@ -22,15 +28,6 @@ export default function Home() {
 
       </div>
     </section>
-import Hero from "@/components/modules/hero";
-import ShowReviews from "@/components/modules/ShowReviews";
-import Image from "next/image";
-
-export default function Home() {
-  return (
-    <>
-      <Hero />
-      <ShowReviews />
-    </>
-  );
+      </>
+  )
 }
