@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
-import SearchGround from "./search-ground";
+import SearchGround from "./SearchGround";
 
 const Hero = () => {
   return (
