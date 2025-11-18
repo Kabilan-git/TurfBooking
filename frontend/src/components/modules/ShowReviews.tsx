@@ -88,28 +88,27 @@ export default function ShowReviews() {
                   {item.name}
                 </h3>
 
-<p className="text-gray-500 mt-3 line-clamp-3">{item.review}</p>
+                <p className="text-gray-500 mt-3 line-clamp-3">{item.review}</p>
 
-{isActive && (
-  <div className="flex justify-center gap-3 mt-6 flex-wrap">
-    {item.tags.map((tag, i) => (
-      <span
-        key={i}
-        className={`inline-flex items-center gap-2 whitespace-nowrap px-3 py-1 text-sm rounded-full border ${
-          i === 1
-            ? "bg-white text-green-600 border-green-300"
-            : i === 2
-            ? "bg-red-500 text-white border-red-400"
-            : "bg-green-500 text-white border-green-400"
-        }`}
-      >
-          <Trophy size={14} className="text-white-300 shrink-0" />
-        {tag}
-      </span>
-    ))}
-  </div>
-)}
-
+                {isActive && (
+                  <div className="flex justify-center gap-3 mt-6 flex-wrap">
+                    {item.tags.map((tag, i) => (
+                      <span
+                        key={i}
+                        className={`inline-flex items-center gap-2 whitespace-nowrap px-3 py-1 text-sm rounded-full border ${
+                          i === 1
+                            ? "bg-white text-green-600 border-green-300"
+                            : i === 2
+                            ? "bg-red-500 text-white border-red-400"
+                            : "bg-green-500 text-white border-green-400"
+                        }`}
+                      >
+                        <Trophy size={14} className="text-white-300 shrink-0" />
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             )}
           </SwiperSlide>
