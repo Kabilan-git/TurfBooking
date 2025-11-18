@@ -114,6 +114,20 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+.custom-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #9ae6b4; 
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #16a34a !important; 
+  width: 10px;
+  border-radius: 10px;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
