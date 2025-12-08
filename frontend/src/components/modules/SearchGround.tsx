@@ -4,8 +4,8 @@ import React, { useState } from "react";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import { MapPin, MoveRight } from "lucide-react";
-import Calendar22 from "@/components/shared/datepicker";
-import Dropdown from "@/components/shared/dropdown";
+import Calendar22 from "@/components/shared/Datepicker";
+import Dropdown from "@/components/shared/Dropdown";
 
 const SearchGround = () => {
   const [selectedDate, setSelectedDate] = useState<Date | undefined>(undefined);
